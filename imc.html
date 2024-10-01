@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="imc.css">
+</head>
+<body>
+ <div class="container">
+   <h1>Calculadora IMC</h1>
+
+   <div class="calculador">
+   <input type="number" id="weigth" placeholder="peso (kg)"><br><br><br>
+   <input type="number" id="heigth" placeholder="Altura (Metros)"><br><br><br>
+    <button onclick="CalculateIMC()">Calcular IMC</button>
+    <div id="result"></div>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Rango IMC</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Menos De 18.5</td>
+            <td>Bajo Peso </td>
+        </tr>
+        <tr>
+            <td>18.5 - 24.9</td>
+            <td>Peso Normal</td>
+        </tr>
+        <tr>
+            <td>25 - 29.9</td>
+            <td> SobrePeso </td>
+        </tr>
+        <tr>
+            <td>30 - 34.9</td>
+            <td>Obesidad Tipo 1 </td>
+        </tr>
+
+    </tbody>
+   
+</table> <br><br>
+<p>El IMC es un criterio ampliamente aceptado pero no es exacto. Clasifica a las personas en infrapeso, peso normal, sobrepeso y obesidad, basándose exclusivamente en la masa del individuo y su altura. No tendría en cuenta la edad, el sexo, el porcentaje de grasa corporal o la masa muscular.
+    s Incluso la categorización aún hoy es objeto de debate sobre dónde se deberían colocar esos límites.</p>
+
+</div>
+
+<script src="imc.js"></script>
+</body>
+</html>
